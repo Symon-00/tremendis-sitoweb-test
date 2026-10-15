@@ -1,0 +1,546 @@
+{
+  "meta": {
+    "title": "Tremendis - Brand guidelines",
+    "version": "0.1",
+    "status": "bozza",
+    "date": "2026-10-15",
+    "language": "it",
+    "source_site": "https://www.tremendis.net/",
+    "notes": [
+      "Tremendis è un'azienda inventata a scopo didattico (lo dichiara il footer del sito).",
+      "Il sito, letto in forma testuale, espone solo il colore del tema (#101b2b), il nome, i claim e il tono di voce. Logo vettoriale, palette completa, font e stile dei componenti non erano leggibili: sono segnati come 'proposed' e vanno confermati."
+    ],
+    "status_legend": {
+      "verified-site": "Letto direttamente su tremendis.net",
+      "from-landing-copy": "Ricavato dal file di copy della landing page (copy-landing-tremendis.md)",
+      "proposed": "Proposta di lavoro coerente con il brand, da confermare o sostituire con i valori reali"
+    }
+  },
+  "brand": {
+    "name": "Tremendis",
+    "domain": "tremendis.net",
+    "category": "Consulenza AI per imprese",
+    "description": "Aiuta le aziende italiane a individuare dove l'AI genera valore, a metterla in produzione e a rispettare AI Act e GDPR.",
+    "offices": [
+      {
+        "city": "Milano"
+      },
+      {
+        "city": "Varsavia",
+        "detail": "Varso Tower, venticinquesimo piano"
+      }
+    ],
+    "founded": 2019,
+    "team_size": 24,
+    "positioning": "Strategia, non demo. Prima il processo, poi lo strumento.",
+    "status": "verified-site",
+    "taglines": [
+      {
+        "text": "Soluzioni AI per aziende italiane",
+        "use": "Titolo principale del sito"
+      },
+      {
+        "text": "I tuoi partner in un mondo fast-paced.",
+        "use": "Claim"
+      },
+      {
+        "text": "Strategia, non demo",
+        "use": "Pilastro"
+      },
+      {
+        "text": "Conformità AI Act e GDPR",
+        "use": "Pilastro"
+      },
+      {
+        "text": "Adozione reale, non shadow AI",
+        "use": "Pilastro"
+      },
+      {
+        "text": "L'AI smette di essere un hobby interno e diventa un vantaggio competitivo.",
+        "use": "Promessa"
+      },
+      {
+        "text": "La differenza si vede dal primo mese.",
+        "use": "Prova"
+      },
+      {
+        "text": "Parliamo di dove l'AI ti conviene davvero.",
+        "use": "Invito all'azione"
+      }
+    ]
+  },
+  "logo": {
+    "status": "proposed",
+    "current_state": "Sul sito compare solo il nome 'Tremendis' in testo nell'header. Non esiste un file logo né un SVG pubblico. L'unica immagine di brand è og.jpg, l'anteprima social, che non è un logo.",
+    "wordmark": {
+      "text": "Tremendis",
+      "case": "Maiuscola iniziale, resto minuscolo",
+      "never": [
+        "TREMENDIS",
+        "tremendis",
+        "Tremen dis"
+      ]
+    },
+    "versions": [
+      {
+        "name": "Su sfondo scuro",
+        "foreground": "white",
+        "background": "navy-900"
+      },
+      {
+        "name": "Su sfondo chiaro",
+        "foreground": "navy-900",
+        "background": "white"
+      }
+    ],
+    "clear_space": "Almeno l'altezza della lettera T su ogni lato",
+    "minimum_size": {
+      "digital_px_height": 20,
+      "print_mm_height": 6
+    },
+    "dont": [
+      "Non cambiare il colore fuori dalle due versioni",
+      "Non deformare, ruotare o aggiungere ombre",
+      "Non usare il logo su immagini che ne riducono la leggibilità"
+    ],
+    "next_step": "Fornire il logo ufficiale (SVG) per sostituire il wordmark provvisorio."
+  },
+  "colors": {
+    "palette": [
+      {
+        "name": "Navy Tremendis",
+        "token": "navy-900",
+        "hex": "#101b2b",
+        "role": "Colore primario. Sfondi scuri, testo principale, header.",
+        "status": "verified-site",
+        "contrast_on_white": 17.3,
+        "contrast_on_navy_900": 1.0
+      },
+      {
+        "name": "Navy 800",
+        "token": "navy-800",
+        "hex": "#182740",
+        "role": "Superfici scure rialzate, card su sfondo navy.",
+        "status": "proposed",
+        "contrast_on_white": 14.97,
+        "contrast_on_navy_900": 1.16
+      },
+      {
+        "name": "Navy 600",
+        "token": "navy-600",
+        "hex": "#2c4468",
+        "role": "Bordi e linee su sfondo scuro, stati hover.",
+        "status": "proposed",
+        "contrast_on_white": 9.84,
+        "contrast_on_navy_900": 1.76
+      },
+      {
+        "name": "Ink muted",
+        "token": "ink-muted",
+        "hex": "#566377",
+        "role": "Testo secondario su sfondo chiaro.",
+        "status": "proposed",
+        "contrast_on_white": 6.09,
+        "contrast_on_navy_900": 2.84
+      },
+      {
+        "name": "Paper",
+        "token": "paper",
+        "hex": "#f4f6f9",
+        "role": "Sfondo chiaro delle sezioni alternate.",
+        "status": "proposed",
+        "contrast_on_white": 1.08,
+        "contrast_on_navy_900": 15.98
+      },
+      {
+        "name": "White",
+        "token": "white",
+        "hex": "#ffffff",
+        "role": "Testo su navy, superfici chiare.",
+        "status": "proposed",
+        "contrast_on_white": 1.0,
+        "contrast_on_navy_900": 17.3
+      },
+      {
+        "name": "Highlight",
+        "token": "highlight",
+        "hex": "#f2b84b",
+        "role": "Parola evidenziata nel titolo, CTA primaria su navy.",
+        "status": "proposed",
+        "contrast_on_white": 1.79,
+        "contrast_on_navy_900": 9.67
+      },
+      {
+        "name": "Negative",
+        "token": "negative",
+        "hex": "#c8453b",
+        "role": "Marcatori X nella lista dei dolori, errori.",
+        "status": "proposed",
+        "contrast_on_white": 4.81,
+        "contrast_on_navy_900": 3.6
+      },
+      {
+        "name": "Positive",
+        "token": "positive",
+        "hex": "#237a5a",
+        "role": "Conferme, voci del nuovo modo.",
+        "status": "proposed",
+        "contrast_on_white": 5.25,
+        "contrast_on_navy_900": 3.3
+      }
+    ],
+    "approved_pairings": [
+      {
+        "foreground": "white",
+        "background": "navy-900",
+        "ratio": 17.3,
+        "wcag": "AAA",
+        "use": "Testo standard su sfondo scuro"
+      },
+      {
+        "foreground": "navy-900",
+        "background": "paper",
+        "ratio": 15.98,
+        "wcag": "AAA",
+        "use": "Testo standard su sfondo chiaro"
+      },
+      {
+        "foreground": "navy-900",
+        "background": "highlight",
+        "ratio": 9.67,
+        "wcag": "AAA",
+        "use": "Testo dei bottoni primari e parola evidenziata"
+      },
+      {
+        "foreground": "highlight",
+        "background": "navy-900",
+        "ratio": 9.67,
+        "wcag": "AAA",
+        "use": "Parola evidenziata su sfondo scuro"
+      },
+      {
+        "foreground": "ink-muted",
+        "background": "white",
+        "ratio": 6.09,
+        "wcag": "AA",
+        "use": "Testo secondario su bianco"
+      },
+      {
+        "foreground": "ink-muted",
+        "background": "paper",
+        "ratio": 5.63,
+        "wcag": "AA",
+        "use": "Testo secondario su Paper"
+      },
+      {
+        "foreground": "negative",
+        "background": "white",
+        "ratio": 4.81,
+        "wcag": "AA",
+        "use": "Marcatore X e messaggi di errore"
+      },
+      {
+        "foreground": "positive",
+        "background": "white",
+        "ratio": 5.25,
+        "wcag": "AA",
+        "use": "Marcatore di conferma"
+      }
+    ],
+    "rules": [
+      "Il navy domina: sfondi scuri e testo principale. Il Highlight si usa una volta per sezione, mai come sfondo esteso.",
+      "Il testo di corpo usa solo le coppie di colori con contrasto AA o superiore.",
+      "Il colore non è mai l'unico segnale: i marcatori X e di conferma hanno anche un simbolo."
+    ]
+  },
+  "typography": {
+    "status": "proposed",
+    "note": "Il sito non espone i font. Si propone un'unica famiglia sans con fallback di sistema.",
+    "families": {
+      "primary": {
+        "name": "Inter",
+        "fallback": "system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+      }
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "bold": 700,
+      "extrabold": 800
+    },
+    "scale": [
+      {
+        "token": "display",
+        "size_px": 56,
+        "line_height_px": 60,
+        "weight": 800,
+        "use": "Titolo hero, massimo 3 righe"
+      },
+      {
+        "token": "h1",
+        "size_px": 40,
+        "line_height_px": 46,
+        "weight": 800,
+        "use": "Titoli di sezione"
+      },
+      {
+        "token": "h2",
+        "size_px": 28,
+        "line_height_px": 34,
+        "weight": 700,
+        "use": "Titoli di card e blocchi"
+      },
+      {
+        "token": "h3",
+        "size_px": 20,
+        "line_height_px": 28,
+        "weight": 700,
+        "use": "Titoli di voce e step"
+      },
+      {
+        "token": "body",
+        "size_px": 18,
+        "line_height_px": 28,
+        "weight": 400,
+        "use": "Testo corrente"
+      },
+      {
+        "token": "small",
+        "size_px": 14,
+        "line_height_px": 20,
+        "weight": 500,
+        "use": "Microcopy, note, righe di rassicurazione"
+      },
+      {
+        "token": "label",
+        "size_px": 12,
+        "line_height_px": 16,
+        "weight": 700,
+        "use": "Etichette in maiuscolo, spaziatura 0.08em"
+      }
+    ],
+    "rules": [
+      "Allineamento a sinistra per il testo, centrato solo per le bande CTA e il titolo hero.",
+      "Lunghezza di riga ideale 60-75 caratteri.",
+      "Una sola parola evidenziata per titolo, nel colore Highlight."
+    ]
+  },
+  "voice": {
+    "status": "verified-site",
+    "summary": "Diretto, pragmatico, anti-hype. Dà del tu. Frasi brevi e affermazioni nette.",
+    "principles": [
+      {
+        "name": "Diretto",
+        "description": "Una cosa per frase. Dire prima il risultato, poi il come."
+      },
+      {
+        "name": "Pragmatico",
+        "description": "Parlare di processi, ore, soldi e KPI, non di tecnologia in astratto."
+      },
+      {
+        "name": "Anti-hype",
+        "description": "Prendere le distanze da demo e promesse facili. Dire anche dove l'AI non serve."
+      },
+      {
+        "name": "Informale ma professionale",
+        "description": "Si usa il tu. Nessuna burocrazia, nessun slang."
+      }
+    ],
+    "language": {
+      "person": "seconda persona singolare (tu)",
+      "company_voice": "noi",
+      "english_terms_allowed": [
+        "AI-first",
+        "fast-paced",
+        "shadow AI",
+        "P&L",
+        "KPI",
+        "audit"
+      ],
+      "spelling": [
+        "AI (non IA)",
+        "AI Act e GDPR",
+        "Mappa AI con iniziali maiuscole"
+      ]
+    },
+    "do": [
+      "Aprire con il problema del lettore, non con noi",
+      "Usare numeri e tempi concreti (60 minuti, 48 ore)",
+      "Chiudere ogni sezione con una prossima azione chiara",
+      "Rassicurare vicino al bottone: gratis, senza impegno, la mappa resta tua"
+    ],
+    "dont": [
+      "Aggettivi gonfiati: rivoluzionario, epocale, game changer",
+      "Promettere tutto, subito, ovunque",
+      "Vendere un tool prima di aver visto il processo",
+      "Frasi lunghe con più di una idea"
+    ],
+    "examples": [
+      {
+        "say": "Non vendiamo tool.",
+        "avoid": "Offriamo soluzioni tecnologiche all'avanguardia."
+      },
+      {
+        "say": "Ti diciamo anche dove l'AI non serve.",
+        "avoid": "L'AI risolve ogni problema aziendale."
+      },
+      {
+        "say": "Prima il processo, poi lo strumento.",
+        "avoid": "Il nostro tool trasforma la tua azienda."
+      }
+    ]
+  },
+  "imagery": {
+    "status": "verified-site",
+    "assets": [
+      {
+        "file": "/img/offices.jpg",
+        "alt": "Gli uffici Tremendis al venticinquesimo piano della Varso Tower a Varsavia",
+        "use": "Sede e team"
+      },
+      {
+        "file": "/img/tower.jpg",
+        "alt": null,
+        "use": "La Varso Tower"
+      },
+      {
+        "file": "/og.jpg",
+        "alt": null,
+        "use": "Anteprima social"
+      }
+    ],
+    "guidelines": [
+      "Fotografie reali di sedi e persone, mai immagini stock generiche di robot o cervelli.",
+      "Ogni immagine ha un testo alternativo descrittivo.",
+      "Il ritratto del founder e quadrato 1:1."
+    ]
+  },
+  "layout": {
+    "status": "proposed",
+    "grid": {
+      "base_unit_px": 8,
+      "max_content_width_px": 1160,
+      "gutter_px": 24,
+      "mobile_margin_px": 16
+    },
+    "section_padding_px": {
+      "desktop": 96,
+      "mobile": 64
+    },
+    "radius_px": {
+      "card": 12,
+      "button": 10
+    },
+    "buttons": [
+      {
+        "name": "Primario",
+        "style": "Pieno, colore Highlight con testo navy-900",
+        "use": "Una CTA per vista"
+      },
+      {
+        "name": "Secondario",
+        "style": "Outline, bordo e testo bianchi su navy oppure navy-900 su chiaro",
+        "use": "Azione alternativa"
+      }
+    ],
+    "components": [
+      {
+        "name": "Titolo con parola evidenziata",
+        "status": "from-landing-copy",
+        "description": "Titolo su 3 righe, una parola nel colore Highlight."
+      },
+      {
+        "name": "Lista dei dolori",
+        "status": "from-landing-copy",
+        "description": "Sei frasi in prima persona con marcatore X e divisori."
+      },
+      {
+        "name": "Rottura non è X, è Y",
+        "status": "from-landing-copy",
+        "description": "Riga negata barrata sopra, riga affermata sotto."
+      },
+      {
+        "name": "Vecchio modo / nuovo modo",
+        "status": "from-landing-copy",
+        "description": "Due card affiancate con cinque voci ciascuna."
+      },
+      {
+        "name": "Tre step con linea di connessione",
+        "status": "from-landing-copy",
+        "description": "Passaggi numerati con descrizione ed esito."
+      },
+      {
+        "name": "Banda CTA centrata",
+        "status": "from-landing-copy",
+        "description": "Titolo su 2 righe, CTA piena, CTA outline, micro-riga."
+      }
+    ]
+  },
+  "landing_page_pattern": {
+    "status": "from-landing-copy",
+    "type": "Opt-in: raccoglie contatti, non vende.",
+    "goal": "Far prenotare l'audit AI gratuito di 60 minuti.",
+    "sections": [
+      {
+        "order": 1,
+        "name": "Attenzione",
+        "template": "016",
+        "purpose": "Hero tipografico con parola evidenziata"
+      },
+      {
+        "order": 2,
+        "name": "Problema",
+        "template": "026",
+        "purpose": "Lista dei dolori con X e divisori"
+      },
+      {
+        "order": 3,
+        "name": "Soluzione transizione",
+        "template": "033",
+        "purpose": "Rottura non è X, è Y"
+      },
+      {
+        "order": 4,
+        "name": "Offer",
+        "template": "108",
+        "purpose": "Prenotazione call con calendario e slot"
+      },
+      {
+        "order": 5,
+        "name": "Soluzione USP",
+        "template": "036",
+        "purpose": "Il vecchio modo / il nuovo modo"
+      },
+      {
+        "order": 6,
+        "name": "Soluzione",
+        "template": "039",
+        "purpose": "Tre step orizzontali con linea di connessione"
+      },
+      {
+        "order": 7,
+        "name": "Obiezioni",
+        "template": "088",
+        "purpose": "Una obiezione gestita in un blocco largo"
+      },
+      {
+        "order": 8,
+        "name": "CTA",
+        "template": "099",
+        "purpose": "Banda CTA centrata a tutta larghezza"
+      },
+      {
+        "order": 9,
+        "name": "FAQ",
+        "template": "084",
+        "purpose": "Domande sempre aperte su due colonne"
+      }
+    ],
+    "cta_label": "Prenota l'audit gratuito",
+    "reassurance_lines": [
+      "Gratis e senza impegno.",
+      "La Mappa AI resta tua.",
+      "60 minuti, zero costi, zero impegno."
+    ]
+  }
+}
