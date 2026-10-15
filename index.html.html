@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tremendis · Audit AI gratuito di 60 minuti</title>
+<meta name="description" content="Prenota l'audit AI gratuito di 60 minuti: guardiamo come lavorate, ti diciamo dove l'AI rende e ricevi la tua Mappa AI. Gratis e senza impegno.">
+<meta name="theme-color" content="#101b2b">
+<meta property="og:title" content="Tremendis · Audit AI gratuito di 60 minuti">
+<meta property="og:description" content="C'è fatturato fermo dentro la tua azienda. Prenota l'audit AI gratuito e ricevi la tua Mappa AI.">
+<meta property="og:type" content="website">
+<style>
+/* ==========================================================================
+   Tremendis · landing opt-in · audit AI gratuito
+   Brand: brand/brand-guidelines.json (navy verificato dal sito; il resto è proposta)
+   Struttura: 9 sezioni dai template FunOps 016, 026, 033, 108, 036, 039, 088, 099, 084
+   ========================================================================== */
+:root{
+  /* palette */
+  --navy:#101b2b; --navy-800:#182740; --navy-600:#2c4468;
+  --ink:#101b2b; --muted:#566377;
+  --paper:#f4f6f9; --white:#ffffff; --line:#d5dbe3;
+  --high:#f2b84b; --neg:#c8453b; --pos:#237a5a;
+  --on-navy:#c9d2de; --on-navy-dim:#9aa9bd; --line-navy:#2c4468;
+  /* layout */
+  --wrap:1120px; --pad:clamp(20px,5vw,56px); --vpad:clamp(64px,8vw,96px);
+  --gap:clamp(20px,3vw,36px); --r:12px; --r-btn:10px;
+  /* type */
+  --font:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{font-family:var(--font);background:var(--white);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--high);outline-offset:3px;border-radius:4px}
+.bg-white :focus-visible,.bg-paper :focus-visible{outline-color:var(--navy-600)}
+
+h1,h2,h3,h4{font-weight:800;letter-spacing:-.02em;line-height:1.12}
+.t-xl{font-size:clamp(30px,5.2vw,56px)}
+.t-lg{font-size:clamp(26px,3.6vw,40px)}
+.t-md{font-size:clamp(18px,2.1vw,23px)}
+p{line-height:1.55;color:var(--muted);font-size:clamp(15px,1.5vw,17px)}
+.lead{font-size:clamp(16px,1.9vw,20px)}
+
+/* sezioni e sfondi */
+.wrap{max-width:var(--wrap);margin:0 auto;padding:var(--vpad) var(--pad)}
+.bg-white{background:var(--white)}
+.bg-paper{background:var(--paper)}
+.bg-navy{background:var(--navy);color:#fff}
+.bg-navy p{color:var(--on-navy)}
+
+/* bottoni: primario Highlight, secondario outline */
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--high);color:var(--navy);border:0;border-radius:var(--r-btn);padding:15px 26px;font-family:inherit;font-weight:800;font-size:16px;line-height:1.2;cursor:pointer;text-align:center;box-shadow:inset 0 0 0 1px rgba(16,27,43,.14);transition:transform .15s ease,filter .15s ease}
+.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--navy)}
+.btn.ghost:hover{background:rgba(16,27,43,.05);filter:none}
+.bg-navy .btn.ghost{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6)}
+.bg-navy .btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn.full{display:flex;width:100%}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none;filter:none}
+
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:clamp(18px,2.4vw,28px)}
+.bg-white .card{background:var(--paper)}
+
+/* ---------- 1 · Attenzione (016 · hero tipografico) ---------- */
+.hero .wrap{padding-top:clamp(24px,4vw,40px)}
+.wordmark{display:inline-block;font-weight:800;font-size:22px;letter-spacing:-.02em;color:#fff}
+.h16{text-align:center;padding-top:clamp(48px,9vw,104px);padding-bottom:clamp(24px,5vw,56px)}
+.h16-title{font-size:clamp(34px,6.6vw,72px);line-height:1.05;letter-spacing:-.03em;max-width:min(100%,760px);margin:0 auto;overflow-wrap:anywhere}
+.h16-title .ln{display:block}
+.h16-mark{display:inline-block;max-width:100%;background:var(--high);color:var(--navy);border-radius:8px;padding:.02em .2em}
+.h16-sub{max-width:min(100%,44ch);margin:clamp(22px,3vw,32px) auto 0}
+.h16-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:clamp(28px,4vw,40px)}
+.h16-cta .btn{flex:0 1 auto;max-width:100%}
+@media (min-width:380px){.h16-cta{flex-wrap:nowrap}}
+.h16-note{margin-top:22px;font-size:14px;color:var(--on-navy-dim)}
+.bg-navy p.h16-note{color:var(--on-navy-dim)}
+
+/* ---------- 2 · Problema (026 · lista dei dolori) ---------- */
+.col26{max-width:700px}
+.pains{list-style:none;margin-top:clamp(26px,4vw,42px);border-top:1px solid var(--line)}
+.pains li{display:flex;gap:clamp(13px,2.4vw,20px);align-items:flex-start;padding:clamp(15px,2.3vw,21px) 0;border-bottom:1px solid var(--line)}
+.xr{flex:none;width:30px;height:30px;border-radius:999px;border:1.5px solid var(--neg);color:var(--neg);display:grid;place-items:center;font-size:18px;font-weight:700;line-height:1;margin-top:1px}
+.say{font-size:clamp(16px,1.9vw,20px);line-height:1.45;color:var(--ink)}
+.chiusura26{margin-top:clamp(22px,3vw,34px);max-width:62ch;font-weight:700;color:var(--ink);font-size:clamp(16px,1.9vw,20px)}
+
+/* ---------- 3 · Soluzione transizione (033 · rottura non è X, è Y) ---------- */
+.hinge .wrap{padding-top:clamp(64px,12vw,140px);padding-bottom:clamp(64px,12vw,140px)}
+.riga{font-weight:800;letter-spacing:-.03em;line-height:1.04;font-size:clamp(32px,6vw,68px);overflow-wrap:anywhere;max-width:20ch}
+.riga.giu{color:#8493a8}
+.riga.giu s{text-decoration-thickness:.06em;text-decoration-color:var(--high)}
+.riga.su{color:#fff;margin-top:clamp(10px,2vw,22px)}
+.riga.su em{font-style:normal;color:var(--high)}
+
+/* ---------- 4 · Offer (108 · prenotazione con calendario) ---------- */
+.top108{max-width:62ch}
+.duo{display:grid;gap:clamp(20px,3vw,32px);margin-top:clamp(28px,4vw,44px);align-items:start}
+@media (min-width:880px){.duo{grid-template-columns:1.15fr .85fr}}
+.pane{display:flex;flex-direction:column}
+.panehd{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.tz{font-size:13px;margin-top:6px}
+.cal{margin-top:16px}
+.calnav{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.calnav .mese{font-weight:800;font-size:15px;text-transform:capitalize;color:var(--ink)}
+.navbtn{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--white);color:var(--ink);font-size:18px;line-height:1;cursor:pointer;font-family:inherit}
+.navbtn:hover:not(:disabled){border-color:var(--navy)}
+.navbtn:disabled{opacity:.35;cursor:default}
+.dows{display:grid;grid-template-columns:repeat(7,1fr);gap:clamp(3px,1vw,6px);margin-bottom:6px}
+.dows span{text-align:center;font-size:12px;font-weight:800;color:var(--muted);letter-spacing:.04em}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:clamp(3px,1vw,6px)}
+.day{min-width:0;aspect-ratio:1;display:grid;place-items:center;border-radius:8px;border:1px solid var(--line);background:var(--white);color:var(--ink);font-family:inherit;font-weight:700;font-size:14px;line-height:1;cursor:pointer}
+.day.off{border-style:dashed;background:transparent;color:#a3adba;font-weight:500;cursor:default}
+.day.blank{border:0;background:transparent}
+.day.on:hover{border-color:var(--navy)}
+.day.sel{background:var(--navy);border-color:var(--navy);color:#fff}
+.key{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:12.5px;color:var(--muted)}
+.key span{display:flex;gap:7px;align-items:center}
+.sw{flex:none;width:15px;height:15px;border-radius:5px;border:1px solid var(--line);background:var(--white)}
+.sw.no{border-style:dashed;background:transparent}
+.pick{font-size:13px;margin-top:6px}
+.pick b{color:var(--ink)}
+.slots{display:flex;flex-direction:column;gap:9px;margin-top:16px;min-height:clamp(130px,26vw,268px)}
+.slot{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--ink);padding:12px 14px;font-family:inherit;font-weight:700;font-size:15px;line-height:1.2;cursor:pointer}
+.slot em{font-style:normal;font-weight:500;font-size:13px;color:var(--muted)}
+.slot:hover{border-color:var(--navy)}
+.slot.sel{box-shadow:inset 0 0 0 2px var(--navy)}
+.vuoto{border:1.5px dashed #b6bfcb;border-radius:8px;padding:18px 14px;text-align:center;font-size:14px}
+.panefoot{margin-top:auto;padding-top:18px;display:flex;flex-direction:column;gap:9px}
+.panefoot small{font-size:13px;color:var(--muted);line-height:1.4;text-align:center}
+.who{margin-top:clamp(20px,3vw,30px);display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.avatar{flex:none;width:clamp(104px,24vw,124px);aspect-ratio:1;border-radius:var(--r);background:var(--navy-800);color:var(--high);display:grid;place-items:center;font-weight:800;font-size:34px;letter-spacing:-.02em;box-shadow:inset 0 0 0 1px var(--navy-600)}
+.who .txt{flex:1 1 220px;min-width:0}
+.who strong{display:block;font-size:17px;color:var(--ink)}
+.who .ruolo{display:block;font-size:13px;font-weight:700;color:var(--muted);margin:2px 0 6px}
+
+/* ---------- 5 · Soluzione USP (036 · vecchio / nuovo modo) ---------- */
+.testa{max-width:58ch}
+.confronto{display:grid;gap:var(--gap);margin-top:clamp(30px,4.5vw,50px)}
+.col{display:flex;flex-direction:column;gap:14px;min-width:0;border-width:2px}
+.col .et{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.voce{display:flex;gap:11px;align-items:flex-start;font-size:15px;line-height:1.4}
+.mk{flex:none;width:16px;height:16px;margin-top:3px;border-radius:4px}
+.vecchio{background:#eceff3;border-color:#dde2e9;box-shadow:none}
+.bg-white .vecchio{background:#eceff3}
+.vecchio .et{color:#7b8696}
+.vecchio h3{color:#6f7a8b}
+.vecchio .voce{color:#6f7a8b}
+.vecchio .mk{border:1.5px dashed #9aa4b2}
+.nuovo{background:var(--white)!important;border-color:var(--navy);box-shadow:0 12px 26px rgba(16,27,43,.10)}
+.nuovo .et{color:var(--pos)}
+.nuovo .voce{color:var(--ink)}
+.nuovo .mk{background:var(--pos);position:relative}
+.nuovo .mk::after{content:"";position:absolute;left:5px;top:2px;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+@media (min-width:820px){
+  .confronto{grid-template-columns:1fr 1fr;column-gap:var(--gap);row-gap:14px;align-items:start}
+  @supports (grid-template-rows:subgrid){
+    .confronto{grid-template-rows:auto auto repeat(5,auto)}
+    .col{display:grid;grid-row:1 / span 7;grid-template-rows:subgrid;gap:14px}
+  }
+}
+
+/* ---------- 6 · Soluzione (039 · tre step con linea) ---------- */
+.intro039{max-width:660px;margin:0 auto;text-align:center}
+.steps{position:relative;display:grid;gap:clamp(30px,4vw,40px);margin-top:clamp(34px,5vw,56px)}
+.steps::before{content:"";display:none;position:absolute;top:34px;left:16%;right:16%;height:2px;background:#c3ccd8}
+@media (min-width:760px){
+  .steps{grid-template-columns:repeat(3,1fr);gap:clamp(24px,3.5vw,44px)}
+  .steps::before{display:block}
+}
+.step{position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center}
+.num{width:68px;height:68px;border-radius:999px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:26px;font-weight:800;line-height:1;box-shadow:0 0 0 6px var(--paper)}
+.step h3{margin-top:18px}
+.step p{margin-top:10px;max-width:34ch}
+.esito{margin-top:14px;border-top:1px solid #c3ccd8;padding-top:12px;font-size:14px;font-weight:700;color:var(--ink);width:100%;max-width:34ch}
+.chiusura039{margin-top:clamp(32px,5vw,52px);text-align:center}
+
+/* ---------- 7 · Obiezioni (088 · un blocco) ---------- */
+.intro088{max-width:700px}
+.blocks{display:flex;flex-direction:column;gap:clamp(18px,2.6vw,30px);margin-top:clamp(30px,4vw,48px)}
+.blk{padding:clamp(22px,3.6vw,44px)}
+.count{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.blk h3{font-size:clamp(21px,2.9vw,30px);margin-top:10px;max-width:34ch}
+.body{max-width:62ch;margin-top:16px;display:flex;flex-direction:column;gap:12px}
+.punch{margin-top:18px;border-left:3px solid var(--high);padding-left:16px;max-width:58ch;color:var(--ink);font-weight:700;font-size:clamp(15px,1.7vw,18px);line-height:1.45}
+.proof{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.45;color:var(--muted)}
+.chip{flex:none;border-radius:6px;background:var(--navy);color:#fff;font-size:10px;font-weight:800;letter-spacing:.08em;padding:5px 7px;line-height:1}
+.close088{margin-top:clamp(26px,3.5vw,40px);display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.close088 p{margin:0;flex:1 1 240px}
+
+/* ---------- 8 · CTA (099 · banda centrata) ---------- */
+.band .wrap{padding-block:clamp(64px,11vw,132px)}
+.mid{max-width:720px;margin:0 auto;text-align:center}
+.row2{display:block}
+.mid .lead{margin-top:clamp(18px,2.6vw,26px)}
+.acts{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:clamp(28px,4.4vw,44px)}
+.acts .btn{flex:1 1 min(100%,230px);max-width:340px}
+.foot099{display:block;margin-top:18px;font-size:13px;line-height:1.4;color:var(--on-navy-dim)}
+
+/* ---------- 9 · FAQ (084 · due colonne sempre aperte) ---------- */
+.head084{max-width:640px}
+.qas{display:grid;gap:clamp(30px,4vw,44px);margin-top:clamp(30px,4.5vw,52px)}
+@media (min-width:780px){.qas{grid-template-columns:1fr 1fr;column-gap:clamp(40px,6vw,80px)}}
+.q{font-size:clamp(17px,1.9vw,20px);font-weight:800;letter-spacing:-.01em;line-height:1.3;color:var(--ink)}
+.a{margin-top:9px;max-width:46ch}
+.end084{margin-top:clamp(34px,5vw,56px);border-top:1px solid var(--line);padding-top:clamp(20px,3vw,28px);display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.end084 p{margin:0;flex:1 1 min(100%,260px);max-width:52ch;font-weight:700;color:var(--ink)}
+.end084 .cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- footer ---------- */
+.sitefoot .wrap{padding-block:clamp(32px,5vw,48px);display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between;align-items:baseline}
+.sitefoot p{font-size:13px;color:var(--on-navy-dim)}
+.sitefoot .wordmark{font-size:18px}
+</style>
+</head>
+<body>
+
+<!-- ============ 1 · ATTENZIONE · template 016 ============ -->
+<section class="hero bg-navy" id="attenzione">
+  <div class="wrap">
+    <a class="wordmark" href="#attenzione" aria-label="Tremendis, torna in cima">Tremendis</a>
+
+    <div class="h16">
+      <h1 class="h16-title">
+        <span class="ln">C'è <span class="h16-mark">fatturato</span></span>
+        <span class="ln">fermo dentro</span>
+        <span class="ln">la tua azienda.</span>
+      </h1>
+
+      <p class="lead h16-sub">Ore spese su lavori che una macchina fa in minuti. Clienti che aspettano una risposta. Dati che nessuno guarda. L'intelligenza artificiale può sbloccarli: il punto è sapere dove.</p>
+
+      <div class="h16-cta">
+        <a class="btn" href="#problema">Scopri dove</a>
+        <a class="btn ghost" href="#soluzione">Come funziona</a>
+      </div>
+
+      <p class="h16-note">Consulenza AI per imprese · Milano e Varsavia, dal 2019</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 · PROBLEMA · template 026 ============ -->
+<section class="bg-white" id="problema">
+  <div class="wrap">
+    <div class="col26">
+      <h2 class="t-lg">L'AI c'è. Il fatturato che dovrebbe portarti, no.</h2>
+      <p class="lead" style="margin-top:14px">Se ti riconosci in almeno due di queste frasi, stai lasciando soldi sul tavolo.</p>
+
+      <ul class="pains">
+        <li><span class="xr" aria-hidden="true">&#215;</span><span class="say">Uso ChatGPT per scrivere qualche email, ma in azienda nessuno sa cosa ci si può fare davvero.</span></li>
+        <li><span class="xr" aria-hidden="true">&#215;</span><span class="say">Ogni settimana il mio team perde ore su lavori ripetitivi che una macchina farebbe in minuti.</span></li>
+        <li><span class="xr" aria-hidden="true">&#215;</span><span class="say">I concorrenti dicono di usare l'AI e non so se è marketing o se mi stanno passando davanti.</span></li>
+        <li><span class="xr" aria-hidden="true">&#215;</span><span class="say">Abbiamo pagato un tool AI e dopo un mese non lo usava più nessuno.</span></li>
+        <li><span class="xr" aria-hidden="true">&#215;</span><span class="say">Non so se i dati dei miei clienti possono finire dentro un'AI senza problemi di GDPR.</span></li>
+        <li><span class="xr" aria-hidden="true">&#215;</span><span class="say">Ogni settimana mi scrive un fornitore con «la soluzione AI» e non so a chi credere.</span></li>
+      </ul>
+
+      <p class="chiusura26">Il problema non è l'AI. È che nessuno ti ha ancora detto dove, nella tua azienda, fa soldi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 · SOLUZIONE TRANSIZIONE · template 033 ============ -->
+<section class="hinge bg-navy" id="transizione">
+  <div class="wrap">
+    <p class="riga giu">Non ti serve <s>un altro tool AI.</s></p>
+    <h2 class="riga su">Ti serve <em>la tua Mappa AI.</em></h2>
+  </div>
+</section>
+
+<!-- ============ 4 · OFFER · template 108 ============ -->
+<section class="bg-paper" id="offer">
+  <div class="wrap">
+
+    <div class="top108">
+      <h2 class="t-lg">Prenota il tuo audit AI gratuito di 60 minuti</h2>
+      <p class="lead" style="margin-top:14px">Veniamo nella tua azienda (o ci vediamo in videocall), guardiamo come lavorate oggi e ti diciamo, processo per processo, dove usare Claude, ChatGPT o Grok e quanto ti fa guadagnare. Alla fine hai in mano la tua Mappa AI. Gratis e senza impegno.</p>
+    </div>
+
+    <div class="duo">
+
+      <div class="card pane">
+        <div class="panehd">
+          <h3 class="t-md">Scegli il giorno</h3>
+        </div>
+        <p class="tz">Orari in ora italiana.</p>
+
+        <div class="cal">
+          <div class="calnav">
+            <button type="button" class="navbtn" id="mese-prec" aria-label="Mese precedente">&#8249;</button>
+            <span class="mese" id="mese" aria-live="polite"></span>
+            <button type="button" class="navbtn" id="mese-succ" aria-label="Mese successivo">&#8250;</button>
+          </div>
+          <div class="dows" aria-hidden="true"><span>LUN</span><span>MAR</span><span>MER</span><span>GIO</span><span>VEN</span><span>SAB</span><span>DOM</span></div>
+          <div class="days" id="giorni"></div>
+        </div>
+
+        <div class="key">
+          <span><i class="sw"></i>giorni prenotabili</span>
+          <span><i class="sw no"></i>giorni non disponibili</span>
+        </div>
+      </div>
+
+      <div class="card pane">
+        <div class="panehd">
+          <h3 class="t-md">Scegli l'orario</h3>
+        </div>
+        <p class="pick" aria-live="polite">Giorno scelto: <b id="giorno-scelto">nessuno</b></p>
+
+        <div class="slots" id="orari">
+          <p class="vuoto" id="vuoto">Scegli un giorno per vedere gli orari liberi.</p>
+        </div>
+
+        <div class="panefoot">
+          <button type="button" class="btn full" id="conferma" disabled>Conferma il mio audit gratuito</button>
+          <small>Ricevi subito la conferma via email. Puoi spostare l'appuntamento quando vuoi.</small>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="who">
+      <!-- TODO: sostituire il monogramma con il ritratto 1:1 di Lorenzo Bertani -->
+      <div class="avatar" role="img" aria-label="Lorenzo Bertani">LB</div>
+      <div class="txt">
+        <strong>Lorenzo Bertani</strong>
+        <span class="ruolo">Founder e CEO di Tremendis</span>
+        <p style="margin:0">Vent'anni tra operations e trasformazione digitale. Ti dice anche dove l'AI non serve.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 5 · SOLUZIONE USP · template 036 ============ -->
+<section class="bg-white" id="usp">
+  <div class="wrap">
+
+    <div class="testa">
+      <h2 class="t-lg">Perché non siamo l'ennesima consulenza AI</h2>
+      <p class="lead" style="margin-top:12px">Di aziende che «fanno AI» ce ne sono migliaia. Ecco cosa ci rende diversi, punto per punto.</p>
+    </div>
+
+    <div class="confronto">
+
+      <div class="card col vecchio">
+        <span class="et">Il solito modo</span>
+        <h3 class="t-md">La consulenza AI che conosci già</h3>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Ti vende un tool prima di sapere come lavori.</span></div>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Slide e webinar uguali per tutti.</span></div>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Parla solo con chi firma il contratto.</span></div>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Promette tutto, subito, ovunque.</span></div>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Finito il progetto sparisce, e tu resti dipendente da lui.</span></div>
+      </div>
+
+      <div class="card col nuovo">
+        <span class="et">Il modo Tremendis</span>
+        <h3 class="t-md">Prima il processo, poi lo strumento</h3>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Scegliamo lo strumento dopo aver visto il processo: Claude, ChatGPT, Grok, o nessuno.</span></div>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Ogni consiglio parte dai tuoi processi e dai tuoi numeri.</span></div>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Parliamo con chi fa il lavoro, non solo con chi lo compra.</span></div>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Ti diciamo anche dove l'AI non serve.</span></div>
+        <div class="voce"><span class="mk" aria-hidden="true"></span><span>Formiamo il tuo team: la competenza resta in azienda.</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6 · SOLUZIONE · template 039 ============ -->
+<section class="bg-paper" id="soluzione">
+  <div class="wrap">
+
+    <div class="intro039">
+      <h2 class="t-lg">Come funziona l'audit gratuito</h2>
+      <p class="lead" style="margin-top:14px">60 minuti, tre passaggi. Tu ci mostri come lavorate, noi ti diciamo dove l'AI rende.</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <span class="num" aria-hidden="true">1</span>
+        <h3 class="t-md">Prenoti</h3>
+        <p>Scegli giorno e orario dal calendario. Ti mandiamo tre domande sulla tua azienda: bastano 5 minuti per rispondere.</p>
+        <div class="esito">Arriviamo preparati, non si parte da zero.</div>
+      </div>
+
+      <div class="step">
+        <span class="num" aria-hidden="true">2</span>
+        <h3 class="t-md">Guardiamo come lavorate</h3>
+        <p>In 60 minuti, in azienda o in videocall, ripercorriamo con te i processi chiave: vendite, clienti, amministrazione, operations.</p>
+        <div class="esito">Vedi dove si perdono ore e soldi.</div>
+      </div>
+
+      <div class="step">
+        <span class="num" aria-hidden="true">3</span>
+        <h3 class="t-md">Ricevi la tua Mappa AI</h3>
+        <p>Entro 48 ore ti mandiamo la mappa. Per ogni processo trovi lo strumento giusto, cosa cambia e quanto vale.</p>
+        <div class="esito">Sai esattamente da dove partire, anche senza di noi.</div>
+      </div>
+
+    </div>
+
+    <div class="chiusura039">
+      <a class="btn" href="#offer">Prenota l'audit gratuito</a>
+      <p style="margin-top:14px;font-size:14px">Gratis e senza impegno. La mappa resta tua anche se non lavoriamo insieme.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 7 · OBIEZIONI · template 088 (un solo blocco) ============ -->
+<section class="bg-white" id="obiezioni">
+  <div class="wrap">
+    <div class="intro088">
+      <h2 class="t-lg">Il dubbio che hai adesso</h2>
+      <p class="lead" style="margin-top:12px">È normale averlo. Ti rispondiamo senza giri di parole.</p>
+    </div>
+
+    <div class="blocks">
+
+      <div class="card blk">
+        <span class="count">Il dubbio più comune</span>
+        <h3>«Vi ho appena conosciuti. Perché dovrei farvi entrare nella mia azienda, e per giunta gratis?»</h3>
+        <div class="body">
+          <p>Giusto chiederselo. L'audit gratuito serve anche a noi: è il modo più onesto per farti vedere come lavoriamo, invece di chiederti di crederci sulla parola. Se dopo 60 minuti pensi che non valiamo il tuo tempo, lo hai scoperto senza spendere un euro.</p>
+          <p>Sui dati stai tranquillo: durante l'audit non tocchiamo i tuoi sistemi e non ti chiediamo nessun accesso. Ci basta che tu ci racconti come lavorate. Se vuoi, firmiamo un accordo di riservatezza prima di iniziare. E la Mappa AI che ricevi è tua: puoi usarla da solo, con il tuo team o con un altro fornitore.</p>
+        </div>
+        <p class="punch">Nessun accesso ai tuoi dati, nessun obbligo di continuare. La mappa resta tua.</p>
+        <p class="proof"><span class="chip">PROVA</span><span>Tremendis lavora dal 2019: ventiquattro persone tra Milano e Varsavia, fra strategia, engineering e governance.</span></p>
+      </div>
+
+    </div>
+
+    <div class="close088">
+      <a class="btn" href="#offer">Prenota l'audit gratuito</a>
+      <p>60 minuti, zero costi, zero impegno.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8 · CTA · template 099 ============ -->
+<section class="band bg-navy" id="cta">
+  <div class="wrap">
+    <div class="mid">
+
+      <h2 class="t-xl">
+        <span class="row2">Tra 60 minuti sai</span>
+        <span class="row2">dove l'AI ti fa guadagnare.</span>
+      </h2>
+
+      <p class="lead">Audit gratuito e senza impegno. La Mappa AI resta tua.</p>
+
+      <div class="acts">
+        <a class="btn" href="#offer">Prenota l'audit gratuito</a>
+        <a class="btn ghost" href="#soluzione">Rivedi come funziona</a>
+      </div>
+
+      <small class="foot099">Ci vogliono 30 secondi per scegliere il giorno.</small>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9 · FAQ · template 084 ============ -->
+<section class="bg-white" id="faq">
+  <div class="wrap">
+
+    <div class="head084">
+      <h2 class="t-lg">Domande frequenti</h2>
+      <p class="lead" style="margin-top:12px">Le risposte veloci a quello che ci chiedono tutti prima di prenotare.</p>
+    </div>
+
+    <div class="qas">
+      <div>
+        <h3 class="q">Quanto costa l'audit?</h3>
+        <p class="a">Niente. È gratuito e non ti chiediamo la carta di credito.</p>
+      </div>
+      <div>
+        <h3 class="q">Quanto dura?</h3>
+        <p class="a">60 minuti, più 5 minuti prima per rispondere a tre domande sulla tua azienda.</p>
+      </div>
+      <div>
+        <h3 class="q">Si fa di persona o online?</h3>
+        <p class="a">Come preferisci: veniamo in azienda oppure ci vediamo in videocall.</p>
+      </div>
+      <div>
+        <h3 class="q">Devo preparare qualcosa?</h3>
+        <p class="a">No. Ci basta che ci racconti come lavorate: niente documenti, niente accessi.</p>
+      </div>
+      <div>
+        <h3 class="q">Per che tipo di aziende è?</h3>
+        <p class="a">Per le aziende con processi che si ripetono ogni giorno: vendite, assistenza clienti, amministrazione, operations.</p>
+      </div>
+      <div>
+        <h3 class="q">E se non uso ancora nessuno strumento AI?</h3>
+        <p class="a">Meglio: partiamo da zero e ti evitiamo di comprare il tool sbagliato.</p>
+      </div>
+      <div>
+        <h3 class="q">Cosa ricevo alla fine?</h3>
+        <p class="a">La tua Mappa AI entro 48 ore: per ogni processo, lo strumento consigliato, cosa cambia e quanto vale.</p>
+      </div>
+      <div>
+        <h3 class="q">Dopo mi chiamerete per vendermi qualcosa?</h3>
+        <p class="a">Ti chiediamo se vuoi una mano a metterla in pratica. Se dici di no, finisce lì.</p>
+      </div>
+    </div>
+
+    <div class="end084">
+      <p>Hai un'altra domanda?</p>
+      <div class="cta">
+        <a class="btn" href="#offer">Prenota l'audit gratuito</a>
+        <!-- TODO: confermare l'indirizzo email di contatto -->
+        <a class="btn ghost" href="mailto:info@tremendis.net">Scrivici una email</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="sitefoot bg-navy">
+  <div class="wrap">
+    <span class="wordmark">Tremendis</span>
+    <p>Consulenza AI per imprese · Milano e Varsavia</p>
+    <p>Azienda inventata a scopo didattico.</p>
+  </div>
+</footer>
+
+<script>
+/* Calendario di prenotazione (template 108).
+   ATTENZIONE: le disponibilità sono di esempio (giorni feriali dei prossimi 30 giorni,
+   orari ruotati su 3 gruppi). Per andare online collegare a un calendario reale (Cal.com,
+   Calendly, Google Calendar...) e gestire la conferma lato server. */
+(function () {
+  var TZ = 'Europe/Rome';
+
+  function oggiRoma() {
+    var p = new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' })
+      .format(new Date()).split('-');
+    return new Date(+p[0], +p[1] - 1, +p[2]);
+  }
+
+  var oggi = oggiRoma();
+  var inizio = new Date(oggi); inizio.setDate(inizio.getDate() + 1);
+  var fine = new Date(oggi); fine.setDate(fine.getDate() + 30);
+  var vista = new Date(oggi.getFullYear(), oggi.getMonth(), 1);
+  var primoMese = new Date(oggi.getFullYear(), oggi.getMonth(), 1);
+  var ultimoMese = new Date(fine.getFullYear(), fine.getMonth(), 1);
+
+  /* orario, gruppi di giorni in cui è libero (durata 60 minuti) */
+  var ORARI = [
+    ['09:00', [1, 3]], ['10:30', [1, 2]], ['12:00', [1, 3]],
+    ['14:00', [2, 3]], ['15:30', [1, 2]], ['17:00', [2, 3]]
+  ];
+
+  var fmtMese = new Intl.DateTimeFormat('it-IT', { month: 'long', year: 'numeric' });
+  var fmtGiorno = new Intl.DateTimeFormat('it-IT', { weekday: 'long', day: 'numeric', month: 'long' });
+
+  var elMese = document.getElementById('mese');
+  var elGiorni = document.getElementById('giorni');
+  var elPrec = document.getElementById('mese-prec');
+  var elSucc = document.getElementById('mese-succ');
+  var elOrari = document.getElementById('orari');
+  var elVuoto = document.getElementById('vuoto');
+  var elScelto = document.getElementById('giorno-scelto');
+  var elConferma = document.getElementById('conferma');
+
+  var giornoScelto = null;
+  var orarioScelto = null;
+
+  function stessoGiorno(a, b) {
+    return a && b && a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+  }
+  function prenotabile(d) {
+    var w = d.getDay();
+    return w !== 0 && w !== 6 && d >= inizio && d <= fine;
+  }
+  function iso(d) {
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+
+  function disegnaCalendario() {
+    elMese.textContent = fmtMese.format(vista);
+    elPrec.disabled = vista <= primoMese;
+    elSucc.disabled = vista >= ultimoMese;
+    elGiorni.innerHTML = '';
+
+    var vuotiIniziali = (new Date(vista.getFullYear(), vista.getMonth(), 1).getDay() + 6) % 7;
+    var giorniNelMese = new Date(vista.getFullYear(), vista.getMonth() + 1, 0).getDate();
+    var i, el;
+
+    for (i = 0; i < vuotiIniziali; i++) {
+      el = document.createElement('span');
+      el.className = 'day blank';
+      el.setAttribute('aria-hidden', 'true');
+      elGiorni.appendChild(el);
+    }
+    for (i = 1; i <= giorniNelMese; i++) {
+      (function (n) {
+        var d = new Date(vista.getFullYear(), vista.getMonth(), n);
+        if (prenotabile(d)) {
+          var b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'day on' + (stessoGiorno(d, giornoScelto) ? ' sel' : '');
+          b.textContent = n;
+          b.setAttribute('aria-label', fmtGiorno.format(d));
+          b.setAttribute('aria-pressed', stessoGiorno(d, giornoScelto) ? 'true' : 'false');
+          b.addEventListener('click', function () { scegliGiorno(d); });
+          elGiorni.appendChild(b);
+        } else {
+          var s = document.createElement('span');
+          s.className = 'day off';
+          s.textContent = n;
+          s.setAttribute('aria-hidden', 'true');
+          elGiorni.appendChild(s);
+        }
+      })(i);
+    }
+  }
+
+  function disegnaOrari() {
+    Array.prototype.slice.call(elOrari.querySelectorAll('.slot')).forEach(function (n) { n.remove(); });
+    elVuoto.hidden = !!giornoScelto;
+    if (!giornoScelto) return;
+
+    var gruppo = (giornoScelto.getDate() % 3) + 1;
+    ORARI.forEach(function (o) {
+      if (o[1].indexOf(gruppo) === -1) return;
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'slot' + (o[0] === orarioScelto ? ' sel' : '');
+      b.setAttribute('aria-pressed', o[0] === orarioScelto ? 'true' : 'false');
+      b.innerHTML = '<span class="ora">' + o[0] + '</span><em>60 min</em>';
+      b.addEventListener('click', function () { scegliOrario(o[0]); });
+      elOrari.appendChild(b);
+    });
+  }
+
+  function aggiornaRiepilogo() {
+    if (!giornoScelto) {
+      elScelto.textContent = 'nessuno';
+    } else {
+      elScelto.textContent = fmtGiorno.format(giornoScelto) + (orarioScelto ? ', ore ' + orarioScelto : '');
+    }
+    elConferma.disabled = !(giornoScelto && orarioScelto);
+  }
+
+  function scegliGiorno(d) {
+    giornoScelto = d;
+    orarioScelto = null;
+    disegnaCalendario();
+    disegnaOrari();
+    aggiornaRiepilogo();
+  }
+  function scegliOrario(h) {
+    orarioScelto = h;
+    disegnaOrari();
+    aggiornaRiepilogo();
+  }
+
+  elPrec.addEventListener('click', function () {
+    vista = new Date(vista.getFullYear(), vista.getMonth() - 1, 1);
+    disegnaCalendario();
+  });
+  elSucc.addEventListener('click', function () {
+    vista = new Date(vista.getFullYear(), vista.getMonth() + 1, 1);
+    disegnaCalendario();
+  });
+
+  /* Conferma: qui va collegato il salvataggio reale (e la raccolta di nome ed email).
+     Per ora la pagina emette un evento con la scelta fatta. */
+  elConferma.addEventListener('click', function () {
+    if (!(giornoScelto && orarioScelto)) return;
+    document.dispatchEvent(new CustomEvent('tremendis:audit-scelto', {
+      detail: { data: iso(giornoScelto), ora: orarioScelto, durataMinuti: 60, fuso: TZ }
+    }));
+  });
+
+  disegnaCalendario();
+  disegnaOrari();
+  aggiornaRiepilogo();
+})();
+</script>
+
+</body>
+</html>
